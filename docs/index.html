@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TIC 31065777 Eclipse Candidate | Henry Barrientos</title>
+  <meta name="description" content="An independent, reproducible TESS raw-pixel study of five eclipse-like events associated with TIC 31065777.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="A recurring eclipse candidate, tested from the raw pixels">
+  <meta property="og:description" content="Five TESS events, one 40.5717-day clock, and a fully reproducible evidence package by Henry Barrientos.">
+  <meta property="og:image" content="https://henrybarrientos27.github.io/tic-31065777-eclipse/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+  <nav class="nav shell" aria-label="Primary navigation">
+    <a class="identity" href="#top" aria-label="Henry Barrientos research home">
+      <span class="identity-mark" aria-hidden="true">HB</span><span>Henry Barrientos</span>
+    </a>
+    <div class="nav-links">
+      <a href="#method">Method</a><a href="#evidence">Evidence</a>
+      <a href="https://github.com/henrybarrientos27/tic-31065777-eclipse">GitHub ↗</a>
+    </div>
+  </nav>
+
+  <section class="hero shell" id="top">
+    <div class="hero-copy">
+      <p class="eyebrow"><span></span> Independent student research · NASA TESS public data</p>
+      <h1>A recurring eclipse candidate, tested from the raw pixels.</h1>
+      <p class="lede">I analyzed five eclipse-like events associated with TIC 31065777, measured a stable 40.5717-day clock, and built a fully reproducible evidence package around what the data support—and what they do not.</p>
+      <div class="actions">
+        <a class="button primary" href="https://github.com/henrybarrientos27/tic-31065777-eclipse/releases/download/v0.1.0/tic_31065777_rnaas.pdf">Read the manuscript <span aria-hidden="true">↗</span></a>
+        <a class="button secondary" href="https://github.com/henrybarrientos27/tic-31065777-eclipse/releases/tag/v0.1.0">Explore release v0.1.0</a>
+      </div>
+      <p class="status"><span aria-hidden="true">●</span> Public research release · RNAAS manuscript prepared</p>
+    </div>
+    <aside class="orbit-card" aria-label="Project summary">
+      <div class="orbit-visual" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="star"></div><div class="occulting-body"></div>
+      </div>
+      <div class="orbit-caption"><span>Target</span><strong>TIC 31065777</strong><small>TESS Sectors 8, 9, 35, 36, 89</small></div>
+    </aside>
+  </section>
+
+  <section class="metrics" aria-label="Key measurements">
+    <div class="shell metric-grid">
+      <div class="metric"><strong>5</strong><span>eclipse-like events</span></div>
+      <div class="metric"><strong>40.5717 d</strong><span>fitted period</span></div>
+      <div class="metric"><strong>2.920 h</strong><span>joint-fit duration</span></div>
+      <div class="metric"><strong>1.90 min</strong><span>largest held-out timing error</span></div>
+    </div>
+  </section>
+
+  <section class="section shell question">
+    <p class="section-label">The research question</p>
+    <div class="two-column">
+      <h2>Does the same dimming event return on one clock—and is it associated with the target?</h2>
+      <div>
+        <p>A repeated dip can be astrophysical, instrumental, or contamination from a nearby source. The useful question is not simply whether a folded plot looks convincing. It is whether the timing survives held-out observations, the depth survives reasonable measurement choices, and the missing light localizes near the star.</p>
+        <p>That distinction shaped the entire project: measurement first, controls second, interpretation last.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section method-wrap" id="method">
+    <div class="shell">
+      <p class="section-label light">How I tested it</p>
+      <h2 class="method-heading">One result. Three independent lines of pressure.</h2>
+      <div class="method-grid">
+        <article class="method-card"><span class="method-number">01</span><h3>Measured the pixels</h3><p>I extracted photometry directly from public TESS image cutouts in Sectors 8, 9, 35, 36, and 89 instead of relying on a single pre-made light curve.</p></article>
+        <article class="method-card"><span class="method-number">02</span><h3>Tried to break the result</h3><p>I repeated the fit across four aperture sizes, omitted each observing sector in turn, bootstrapped event times, and compared the signal with spatial and time-shift controls.</p></article>
+        <article class="method-card"><span class="method-number">03</span><h3>Checked where the light went</h3><p>Difference images place the missing-light centroid 0.16–0.51 TESS pixel from the catalog target position—consistent at TESS resolution, but not enough to rule out every unresolved blend.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section shell" id="evidence">
+    <div class="evidence-header">
+      <div><p class="section-label">The evidence</p><h2>Every major claim is visible in one figure.</h2></div>
+      <p>Event fits, phase coherence, aperture robustness, spatial controls, and difference-image localization are shown together below.</p>
+    </div>
+    <figure class="research-figure">
+      <img src="tic-31065777-analysis.png" alt="Multipanel scientific figure showing five TESS eclipse events, their phase-folded alignment, aperture robustness, control measurements, and centroid localization near TIC 31065777.">
+      <figcaption>Five TESS eclipse-like events follow a common linear ephemeris. The figure is reproduced from the prepared Research Note; exact data behind it are included in the public release.</figcaption>
+    </figure>
+  </section>
+
+  <section class="section shell conclusion">
+    <div class="claim supported"><p class="claim-kicker">What the data support</p><h2>A recurring eclipse candidate associated with the TIC 31065777 aperture.</h2><p>The five event times are coherent, the measured depth is stable across apertures, and the lost-light position is consistent with the catalog target at TESS resolution.</p></div>
+    <div class="claim open"><p class="claim-kicker">What remains open</p><h2>The companion class and the possibility of an unresolved blend.</h2><p>This work does not claim a planet, a new physical anomaly, or a fully identified eclipsing system. Higher-resolution follow-up is needed to distinguish those possibilities.</p></div>
+  </section>
+
+  <section class="section open-science">
+    <div class="shell open-grid">
+      <div><p class="section-label light">Open science by design</p><h2>The result is inspectable, rerunnable, and falsifiable.</h2></div>
+      <ul>
+        <li><span>Public inputs</span> NASA TESS image data served by MAST</li>
+        <li><span>Reproducible code</span> Exact environment and one-command pipeline</li>
+        <li><span>Auditable evidence</span> Derived tables, controls, hashes, and static report</li>
+        <li><span>Transparent limits</span> Selection effects and unresolved weaknesses preserved</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section shell final-cta">
+    <p class="eyebrow"><span></span> Full research record</p>
+    <h2>Read the note. Inspect the evidence. Reproduce the analysis.</h2>
+    <div class="actions centered">
+      <a class="button primary" href="https://github.com/henrybarrientos27/tic-31065777-eclipse/releases/download/v0.1.0/tic_31065777_rnaas.pdf">Manuscript PDF ↗</a>
+      <a class="button secondary" href="https://github.com/henrybarrientos27/tic-31065777-eclipse">Source and data ↗</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="shell footer-grid">
+      <div><strong>Henry Barrientos</strong><p>Independent student researcher · Collinsville, Oklahoma</p></div>
+      <div class="footer-links"><a href="mailto:henrywaynebarrientos@gmail.com">Email</a><a href="https://github.com/henrybarrientos27/tic-31065777-eclipse">GitHub</a><a href="https://github.com/henrybarrientos27/tic-31065777-eclipse/releases/tag/v0.1.0">Release</a></div>
+    </div>
+  </footer>
+</main>
+</body>
+</html>
