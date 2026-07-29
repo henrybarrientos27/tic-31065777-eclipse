@@ -1,0 +1,7 @@
+rank,method,period_days,score,status,origin_artifact,selection_basis
+1,OMEGA event-link search,40.57154436016681,161.80212090001436,selected_primary,data/primary_repeat.json,Best OMEGA event-link solution after penalizing predicted eclipses in covered flat windows.
+1,weighted raw-event ephemeris,40.57173022378447,,selected_conservative_measurement,data/signal_measurements.json,Weighted fit to all packet-local fitted event centers and explicit integer cycle assignments.
+1,adjacent fitted-event cycle spacing,40.57083332832394,,direct_cycle_spacing_check,data/fitted_events.csv,Sector 8 to 9: 40.570833328 d across 1 assigned cycle(s).
+2,adjacent fitted-event cycle spacing,40.57172541984337,,direct_cycle_spacing_check,data/fitted_events.csv,Sector 9 to 35: 689.719332137 d across 17 assigned cycle(s).
+3,adjacent fitted-event cycle spacing,40.57160446851458,,direct_cycle_spacing_check,data/fitted_events.csv,Sector 35 to 36: 40.571604469 d across 1 assigned cycle(s).
+4,adjacent fitted-event cycle spacing,40.571734680459976,,direct_cycle_spacing_check,data/fitted_events.csv,Sector 36 to 89: 1420.010713816 d across 35 assigned cycle(s).

@@ -1,0 +1,23 @@
+TIC 31065777 joint raw-pixel eclipse fit
+============================================================
+Fit converged: True
+Epoch: 1527.5353330962
+Epoch uncertainty days: 0.0005594130
+Period days: 40.5717218077
+Period uncertainty days: 0.0000193140
+Duration hours: 2.919777
+Duration uncertainty hours: 0.040847
+Ingress ratio: 0.377370
+Mean depth percent: 6.267748
+Median depth percent: 6.223099
+Depth spread percent: 0.224130
+Radius ratio estimate: 0.249461
+Reduced chi-square: 0.923114
+
+Per-sector results:
+ sector  cycle  model_center  depth_percent  depth_error_percent  event_points  residual_rms_percent  local_noise_percent  baseline  slope_per_day
+      8      0   1527.535333       6.257068             0.211637             5              0.217153             0.193014  0.999667      -0.000490
+      9      1   1568.107055       5.984688             0.165012             6              0.161111             0.225781  1.000913       0.002413
+     35     18   2257.826326       6.200629             0.143137            17              0.244752             0.280976  0.999832      -0.000912
+     36     19   2298.398047       6.223099             0.190511            18              0.349192             0.374866  0.999934      -0.001310
+     89     54   3718.408311       6.673254             0.204508            52              0.616227             0.624750  1.001719      -0.008123

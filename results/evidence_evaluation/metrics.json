@@ -1,0 +1,134 @@
+{
+  "by_category": {
+    "deliberately_corrupted": {
+      "primary_omega": {
+        "cases": 2,
+        "false_negatives": 0,
+        "false_positive_rate": 0.0,
+        "false_positives": 0,
+        "true_negatives": 1,
+        "true_positive_rate": 1.0,
+        "true_positives": 1
+      },
+      "replication_bls": {
+        "cases": 2,
+        "false_negatives": 0,
+        "false_positive_rate": 1.0,
+        "false_positives": 1,
+        "true_negatives": 0,
+        "true_positive_rate": 1.0,
+        "true_positives": 1
+      }
+    },
+    "known_normal": {
+      "primary_omega": {
+        "cases": 2,
+        "false_negatives": 0,
+        "false_positive_rate": 0.0,
+        "false_positives": 0,
+        "true_negatives": 2,
+        "true_positive_rate": null,
+        "true_positives": 0
+      },
+      "replication_bls": {
+        "cases": 2,
+        "false_negatives": 0,
+        "false_positive_rate": 0.0,
+        "false_positives": 0,
+        "true_negatives": 2,
+        "true_positive_rate": null,
+        "true_positives": 0
+      }
+    },
+    "known_transit_or_eclipse": {
+      "primary_omega": {
+        "cases": 2,
+        "false_negatives": 0,
+        "false_positive_rate": null,
+        "false_positives": 0,
+        "true_negatives": 0,
+        "true_positive_rate": 1.0,
+        "true_positives": 2
+      },
+      "replication_bls": {
+        "cases": 2,
+        "false_negatives": 0,
+        "false_positive_rate": null,
+        "false_positives": 0,
+        "true_negatives": 0,
+        "true_positive_rate": 1.0,
+        "true_positives": 2
+      }
+    },
+    "known_variable": {
+      "primary_omega": {
+        "cases": 2,
+        "false_negatives": 0,
+        "false_positive_rate": 0.5,
+        "false_positives": 1,
+        "true_negatives": 1,
+        "true_positive_rate": null,
+        "true_positives": 0
+      },
+      "replication_bls": {
+        "cases": 2,
+        "false_negatives": 0,
+        "false_positive_rate": 1.0,
+        "false_positives": 2,
+        "true_negatives": 0,
+        "true_positive_rate": null,
+        "true_positives": 0
+      }
+    },
+    "synthetic_injection": {
+      "primary_omega": {
+        "cases": 12,
+        "false_negatives": 3,
+        "false_positive_rate": null,
+        "false_positives": 0,
+        "true_negatives": 0,
+        "true_positive_rate": 0.75,
+        "true_positives": 9
+      },
+      "replication_bls": {
+        "cases": 12,
+        "false_negatives": 3,
+        "false_positive_rate": null,
+        "false_positives": 0,
+        "true_negatives": 0,
+        "true_positive_rate": 0.75,
+        "true_positives": 9
+      }
+    }
+  },
+  "empirical_public_tess_regression": {
+    "case_id": "TIC_31065777_empirical_repeat",
+    "interpretation": "This empirical disagreement is retained as a visible weakness and is excluded from known-truth headline rates.",
+    "period_agreement": false,
+    "primary_detected": true,
+    "replication_detected": false
+  },
+  "generated_utc": "2026-07-29T02:23:51.065210+00:00",
+  "implementation_agreement_rate": 0.9,
+  "period_agreement_rate_when_both_detect": 1.0,
+  "primary_omega": {
+    "cases": 20,
+    "false_negatives": 3,
+    "false_positive_rate": 0.2,
+    "false_positives": 1,
+    "true_negatives": 4,
+    "true_positive_rate": 0.8,
+    "true_positives": 12
+  },
+  "replication_bls": {
+    "cases": 20,
+    "false_negatives": 3,
+    "false_positive_rate": 0.6,
+    "false_positives": 3,
+    "true_negatives": 2,
+    "true_positive_rate": 0.8,
+    "true_positives": 12
+  },
+  "scope": "Small deterministic engineering evaluation. Rates are not estimates of performance on the astronomical population.",
+  "seed": 20260719
+}

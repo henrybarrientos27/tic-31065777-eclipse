@@ -1,0 +1,5 @@
+signal_depth_percent,tests,primary_recovery_rate,replication_recovery_rate,implementation_period_agreement_rate
+0.25,3,0.0,0.0,
+0.5,3,1.0,1.0,1.0
+1.0,3,1.0,1.0,1.0
+2.0,3,1.0,1.0,1.0

@@ -1,0 +1,22 @@
+{
+  "bootstrap": {
+    "limitation": "This propagates fitted event-center errors. It is not a blind-search false-alarm probability and does not model every correlated systematic.",
+    "method": "parametric measurement-error bootstrap",
+    "period_95_percent_high_days": 40.57186647283373,
+    "period_95_percent_low_days": 40.57160151474809,
+    "period_median_days": 40.571728976516795,
+    "period_standard_deviation_seconds": 5.855801245239063,
+    "seed": 20260719,
+    "trials": 2000
+  },
+  "permutation": {
+    "claim_scope": "post-selection coherence diagnostic only",
+    "diagnostic_p_value": 0.008333333333333333,
+    "limitation": "Cycles and events were selected after looking at the data, so this number must not be interpreted as a global discovery false-alarm rate.",
+    "method": "exact permutation of event centers across fixed cycle labels",
+    "null_rms_median_minutes": 1723692.1663810932,
+    "observed_rms_minutes": 0.6238194892080018,
+    "permutations": 120,
+    "permutations_as_or_more_coherent": 1
+  }
+}

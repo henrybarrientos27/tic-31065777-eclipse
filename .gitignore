@@ -1,0 +1,21 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Public source products are reacquired from MAST.
+data/*.fits
+data/omega_v2/
+plots/
+
+# Machine-specific run logs and temporary manuscript products.
+results/*.log
+manuscript/*.aux
+manuscript/*.bbl
+manuscript/*.blg
+manuscript/*.log
+manuscript/*.out
+manuscript/*.synctex.gz
+manuscript/vendor/
+tmp/

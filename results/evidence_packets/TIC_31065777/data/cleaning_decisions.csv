@@ -1,0 +1,7 @@
+decision_id,stage,decision,rationale,implementation
+CLEAN-001,source product selection,one priority-ranked light-curve product per sector,avoid mixing reductions within a sector,omega_v2.lightcurves.select_products
+CLEAN-002,cadence filtering,remove nonfinite time/flux and nonzero retained quality flags,exclude unusable or explicitly flagged measurements,omega_v2.lightcurves.lightcurve_to_frame
+CLEAN-003,segmentation,"split gaps larger than max(6 cadences, 0.20 d)",prevent normalization across observing gaps,omega_v2.lightcurves._split_indices
+CLEAN-004,normalization,divide each continuous segment by its median,preserve short eclipse-like signals without a flexible detrending model,omega_v2.lightcurves.lightcurve_to_frame
+CLEAN-005,short segment exclusion,remove continuous segments with fewer than 30 retained points,local noise/event estimates are unstable for shorter segments,omega_v2.lightcurves.lightcurve_to_frame
+AUDIT-001,cache/source reconciliation,flag any finite zero-quality source row that should survive cleaning but is absent from the normalized cache,a nonzero count indicates that the cached light curve and audited source FITS product are not exactly reconcilable,evidence_packet.generator._audit_sources

@@ -1,0 +1,37 @@
+[
+  {
+    "consequence": "Photometry cannot determine whether the companion is planetary, substellar, or stellar.",
+    "severity": "high",
+    "weakness": "No radial-velocity or spectroscopic mass measurement is present."
+  },
+  {
+    "consequence": "Its p-value is a coherence diagnostic, not a global false-alarm probability.",
+    "severity": "high",
+    "weakness": "The permutation test is post-selection."
+  },
+  {
+    "consequence": "Rare systematics or one influential event can be underrepresented despite leave-one-out checks.",
+    "severity": "medium",
+    "weakness": "Only 5 fitted eclipse events constrain the conservative ephemeris."
+  },
+  {
+    "consequence": "Code-path agreement is not independent observational confirmation.",
+    "severity": "medium",
+    "weakness": "Primary and replication fits reuse the same astronomical observations."
+  },
+  {
+    "consequence": "A true cross-camera consistency test is not available.",
+    "severity": "medium",
+    "weakness": "Only one TESS camera is represented."
+  },
+  {
+    "consequence": "They measure local sensitivity, not blind-search completeness.",
+    "severity": "medium",
+    "weakness": "Targeted injections use a known injected ephemeris."
+  },
+  {
+    "consequence": "Catalog absence must never be used as proof of novelty.",
+    "severity": "low",
+    "weakness": "No catalog snapshot was available for this packet."
+  }
+]

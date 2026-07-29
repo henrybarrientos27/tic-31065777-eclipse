@@ -1,0 +1,54 @@
+[
+  {
+    "assessment": "favored",
+    "evidence": [
+      "data/signal_measurements.json#/median_depth_percent"
+    ],
+    "explanation": "ordinary eclipsing stellar or substellar companion",
+    "reason": "The repeatable, approximately 6.21% eclipse-like depth is consistent with an occulting companion; photometry alone does not establish its mass."
+  },
+  {
+    "assessment": "reduced but not eliminated",
+    "evidence": [
+      "data/TIC_31065777_blank_apertures.csv"
+    ],
+    "explanation": "background or neighboring eclipsing binary",
+    "reason": "Raw-pixel aperture and blank-position controls were available."
+  },
+  {
+    "assessment": "reduced",
+    "evidence": [
+      "data/cadence_disposition.csv",
+      "data/quality_control.csv"
+    ],
+    "explanation": "quality-flagged spacecraft or reduction artifact",
+    "reason": "The cadence ledger records quality flags and the measured events are drawn from retained cadences across multiple sectors."
+  },
+  {
+    "assessment": "reduced but search-history dependent",
+    "evidence": [
+      "data/period_search.csv",
+      "data/held_out_validation.csv"
+    ],
+    "explanation": "period alias or harmonic",
+    "reason": "Consecutive-cycle events and coverage tests support the reported period, while the period-search table preserves competing aliases."
+  },
+  {
+    "assessment": "disfavored, not physically ruled out",
+    "evidence": [
+      "data/primary_events.csv",
+      "plots/phase_fold.png"
+    ],
+    "explanation": "stellar rotation or pulsation",
+    "reason": "The measured signal is localized in phase and repeats as discrete dips rather than being classified from a sinusoidal model."
+  },
+  {
+    "assessment": "not established",
+    "evidence": [
+      "data/signal_measurements.json",
+      "data/unresolved_weaknesses.json"
+    ],
+    "explanation": "planetary transit",
+    "reason": "Transit-like morphology alone does not identify a planet; dilution, stellar radius uncertainty, and companion mass remain unresolved."
+  }
+]

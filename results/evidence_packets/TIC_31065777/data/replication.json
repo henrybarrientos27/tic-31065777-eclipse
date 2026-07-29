@@ -1,0 +1,36 @@
+{
+  "epoch_btjd": 1527.5352005890657,
+  "harmonic_agreement": true,
+  "implementation": "median_pairwise_slopes_and_median_intercept",
+  "independence_scope": "Independent regression implementation using the same fitted astronomical event centers; not independent observational data.",
+  "lightcurve_bls": {
+    "depth_error_percent": 0.04792694492513235,
+    "depth_percent": 4.428746620374075,
+    "depth_snr": 92.4061950389767,
+    "duration_grid_hours": [
+      2.18983275,
+      2.919777,
+      3.64972125
+    ],
+    "duration_hours": 2.18983275,
+    "implementation": "astropy.timeseries.BoxLeastSquares_local_period_scan",
+    "limitation": "This checks implementation and measurement agreement on the same normalized TESS observations. It is not a blind search and is not independent observational confirmation.",
+    "observed_cycles": 5,
+    "observed_sectors": 5,
+    "period_days": 40.57183165311003,
+    "period_neighborhood_days": [
+      40.47030089822501,
+      40.67315954934393
+    ],
+    "period_samples": 2001,
+    "replication_detection": true,
+    "search_scope": "Narrow period neighborhood supplied by the primary analysis; no primary event centers, cycles, or depths supplied",
+    "transit_time_btjd": 1527.531520414291
+  },
+  "maximum_absolute_residual_minutes": 1.032185727272008,
+  "pairwise_slopes": 10,
+  "period_days": 40.57171568118362,
+  "period_difference_seconds": 1.2564807135731826,
+  "primary_period_days": 40.57173022378447,
+  "rms_minutes": 0.5972879071816781
+}

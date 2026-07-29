@@ -1,0 +1,22 @@
+{
+  "duration_hours": 2.919777,
+  "epoch_btjd": 1527.534962355654,
+  "epoch_error_days": 0.0033716766462577115,
+  "event_count": 5,
+  "maximum_depth_percent": 6.662697381521538,
+  "measurement_definition": "Weighted linear ephemeris from fitted event centers; depth is the median of packet-local fitted-event depths.",
+  "measurement_source": "results/TIC_31065777_robust_event_fits.csv",
+  "median_depth_percent": 6.20692426703501,
+  "minimum_depth_percent": 5.973248675823747,
+  "period_days": 40.57173022378447,
+  "period_error_seconds": 5.946877169024706,
+  "sectors": [
+    8,
+    9,
+    35,
+    36,
+    89
+  ],
+  "tic_id": 31065777,
+  "timing_rms_minutes": 0.6238194892080018
+}

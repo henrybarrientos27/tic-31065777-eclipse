@@ -1,0 +1,22 @@
+case_id,category,truth_positive,truth_period_days,signal_depth_percent,corrupted,truth_basis,seed,points
+normal_white_1,known_normal,False,,0.0,False,deterministic analytic fixture; ground truth known by construction,20260719.0,3456
+normal_white_2,known_normal,False,,0.0,False,deterministic analytic fixture; ground truth known by construction,20260720.0,3456
+sinusoidal_variable,known_variable,False,,0.0,False,deterministic analytic fixture; ground truth known by construction,20260721.0,3456
+sinusoidal_variable_fast,known_variable,False,,0.0,False,deterministic analytic fixture; ground truth known by construction,20260722.0,3456
+known_transit,known_transit_or_eclipse,True,5.137,0.8,False,deterministic analytic fixture; ground truth known by construction,20260723.0,3456
+known_eclipse,known_transit_or_eclipse,True,3.29,3.5000000000000004,False,deterministic analytic fixture; ground truth known by construction,20260724.0,3456
+corrupted_normal,deliberately_corrupted,False,,0.0,True,deterministic analytic fixture; ground truth known by construction,20260725.0,3360
+corrupted_eclipse,deliberately_corrupted,True,4.17,2.5,True,deterministic analytic fixture; ground truth known by construction,20260726.0,3360
+injection_0.25pct_trial_1,synthetic_injection,True,5.137,0.25,False,deterministic analytic fixture; ground truth known by construction,20260727.0,3456
+injection_0.25pct_trial_2,synthetic_injection,True,5.137,0.25,False,deterministic analytic fixture; ground truth known by construction,20260728.0,3456
+injection_0.25pct_trial_3,synthetic_injection,True,5.137,0.25,False,deterministic analytic fixture; ground truth known by construction,20260729.0,3456
+injection_0.50pct_trial_1,synthetic_injection,True,5.137,0.5,False,deterministic analytic fixture; ground truth known by construction,20260730.0,3456
+injection_0.50pct_trial_2,synthetic_injection,True,5.137,0.5,False,deterministic analytic fixture; ground truth known by construction,20260731.0,3456
+injection_0.50pct_trial_3,synthetic_injection,True,5.137,0.5,False,deterministic analytic fixture; ground truth known by construction,20260732.0,3456
+injection_1.00pct_trial_1,synthetic_injection,True,5.137,1.0,False,deterministic analytic fixture; ground truth known by construction,20260733.0,3456
+injection_1.00pct_trial_2,synthetic_injection,True,5.137,1.0,False,deterministic analytic fixture; ground truth known by construction,20260734.0,3456
+injection_1.00pct_trial_3,synthetic_injection,True,5.137,1.0,False,deterministic analytic fixture; ground truth known by construction,20260735.0,3456
+injection_2.00pct_trial_1,synthetic_injection,True,5.137,2.0,False,deterministic analytic fixture; ground truth known by construction,20260736.0,3456
+injection_2.00pct_trial_2,synthetic_injection,True,5.137,2.0,False,deterministic analytic fixture; ground truth known by construction,20260737.0,3456
+injection_2.00pct_trial_3,synthetic_injection,True,5.137,2.0,False,deterministic analytic fixture; ground truth known by construction,20260738.0,3456
+TIC_31065777_empirical_repeat,empirical_public_tess_regression,True,40.5717302229,6.207177,False,existing raw-pixel five-event validation in this repository,,27056

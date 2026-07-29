@@ -1,0 +1,82 @@
+[
+  {
+    "claim_class": "measurement",
+    "claim_id": "M-001",
+    "evidence": [
+      "data/signal_measurements.json#/period_days",
+      "data/fitted_events.csv"
+    ],
+    "statement": "TIC 31065777 has a fitted period of 40.571730224 days."
+  },
+  {
+    "claim_class": "measurement",
+    "claim_id": "M-002",
+    "evidence": [
+      "data/signal_measurements.json#/median_depth_percent",
+      "data/fitted_events.csv#depth_percent"
+    ],
+    "statement": "The median fitted eclipse depth is 6.207% across 5 fitted events."
+  },
+  {
+    "claim_class": "measurement",
+    "claim_id": "M-003",
+    "evidence": [
+      "data/significance_tests.json#/bootstrap",
+      "data/period_bootstrap.csv"
+    ],
+    "statement": "The parametric bootstrap 95% period interval is 40.571601515\u201340.571866473 days."
+  },
+  {
+    "claim_class": "measurement",
+    "claim_id": "M-004",
+    "evidence": [
+      "data/held_out_validation.csv"
+    ],
+    "statement": "The largest held-out event prediction error is 1.90 minutes."
+  },
+  {
+    "claim_class": "measurement",
+    "claim_id": "M-005",
+    "evidence": [
+      "data/replication.json"
+    ],
+    "statement": "The separate median-pairwise-slope implementation differs from the primary period by 1.26 seconds."
+  },
+  {
+    "claim_class": "measurement",
+    "claim_id": "M-006",
+    "evidence": [
+      "data/replication.json#/lightcurve_bls",
+      "data/replication_period_search.csv#depth_percent"
+    ],
+    "statement": "A separate Astropy BLS implementation, operating on the normalized light curve without the primary event centers, measures a 4.429% phase-coherent dip in the preselected period neighborhood."
+  },
+  {
+    "claim_class": "interpretation",
+    "claim_id": "I-001",
+    "evidence": [
+      "data/primary_events.csv",
+      "data/period_search.csv",
+      "data/instrument_comparisons.csv"
+    ],
+    "statement": "The stored measurements support a recurring eclipse-like signal in the public TESS observations."
+  },
+  {
+    "claim_class": "interpretation",
+    "claim_id": "I-002",
+    "evidence": [
+      "data/signal_measurements.json",
+      "data/conventional_explanations.json",
+      "data/unresolved_weaknesses.json"
+    ],
+    "statement": "An ordinary eclipsing companion is the leading conventional explanation; the packet does not establish an anomalous object."
+  },
+  {
+    "claim_class": "speculation",
+    "claim_id": "S-001",
+    "evidence": [
+      "data/unresolved_weaknesses.json"
+    ],
+    "statement": "The companion class could be refined by spectroscopy or additional independent time-series photometry."
+  }
+]

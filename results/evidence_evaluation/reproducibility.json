@@ -1,0 +1,22 @@
+{
+  "code_files": {
+    "evaluate_pipeline.py": {
+      "sha256": "d74929d6181b2b98e7e199e69e97a3a8003eb400b5d81fcbf5c766e49c4fb7f7"
+    },
+    "src/evidence_packet/analysis.py": {
+      "sha256": "5c8607290cc0320104df82016b186024ee41dbdc7e8d912af9d5add677f0846e"
+    },
+    "src/evidence_packet/evaluation.py": {
+      "sha256": "da72fca2a1ea67fcc7b5885d907abd8cbf9d463fbfc34db589451716a04e4c68"
+    },
+    "src/omega_v2/detection.py": {
+      "sha256": "15fc0eedfe728a5e7dceb48c54fe6d5a9d44e724d8116d876e33bc24b58271cd"
+    },
+    "src/omega_v2/lightcurves.py": {
+      "sha256": "e6372f73902ac183e2cc696d17d7a067284b6e78cd99c99602ca62c99a797c33"
+    }
+  },
+  "generated_utc": "2026-07-29T02:23:51.065210+00:00",
+  "python_truth_scope": "Deterministic analytic fixtures plus an optional locally cached public-TESS regression case",
+  "seed": 20260719
+}

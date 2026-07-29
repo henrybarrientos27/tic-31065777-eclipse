@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Please cite the archived release and the associated Research Note."
+title: "Raw-pixel validation of a 40.5717-day eclipse candidate associated with TIC 31065777"
+type: software
+authors:
+  - family-names: Barrientos
+    given-names: Henry
+    email: henrywaynebarrientos@gmail.com
+version: 0.1.0
+date-released: 2026-07-28
+repository-code: "https://github.com/henrybarrientos27/tic-31065777-eclipse"
+abstract: >-
+  Reproducible raw-pixel photometry, robustness tests, localization checks,
+  evidence packet, and RNAAS manuscript for five eclipse-like events associated
+  with TIC 31065777 in public TESS observations.
+keywords:
+  - astronomy
+  - eclipsing binary stars
+  - TESS
+  - reproducible research
+license: MIT

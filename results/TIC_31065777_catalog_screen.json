@@ -1,0 +1,31 @@
+{
+  "queried_utc": "2026-07-29T02:14:41.691821+00:00",
+  "tic_id": 31065777,
+  "catalog": "J/ApJS/279/50",
+  "catalog_article_doi": "10.3847/1538-4365/ade2d8",
+  "interpretation": "The target is present in the unvetted and unvalidated supplement, and absent from the two validated eclipsing-binary tables. This supports a validation-note framing but is not proof of global novelty.",
+  "matches": {
+    "unvetted_unvalidated": {
+      "table": "J/ApJS/279/50/table2",
+      "match_count": 1,
+      "rows": [
+        {
+          "TIC": 31065777,
+          "RAJ2000": 135.070042,
+          "DEJ2000": -45.052218,
+          "Tmag": 12.569999694824219
+        }
+      ]
+    },
+    "validated_new_eb": {
+      "table": "J/ApJS/279/50/table3",
+      "match_count": 0,
+      "rows": []
+    },
+    "validated_known_eb": {
+      "table": "J/ApJS/279/50/table4",
+      "match_count": 0,
+      "rows": []
+    }
+  }
+}

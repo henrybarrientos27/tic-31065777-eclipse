@@ -1,0 +1,9 @@
+numpy==2.5.1
+pandas==2.3.3
+scipy==1.18.0
+matplotlib==3.11.0
+astropy==8.0.1
+astroquery==0.4.11
+lightkurve==2.6.0
+pyarrow==25.0.0
+requests==2.34.2

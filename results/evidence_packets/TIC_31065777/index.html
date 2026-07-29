@@ -1,0 +1,1338 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TIC 31065777 Scientific Evidence Packet</title>
+<style>
+:root { --ink:#132034; --muted:#5e6c80; --paper:#f6f3ec; --card:#fff;
+--blue:#2457a7; --green:#17734b; --amber:#a85f00; --red:#a5303b; }
+* { box-sizing:border-box; } body { margin:0; color:var(--ink); background:var(--paper);
+font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+header { padding:48px max(5vw,24px); color:white; background:#122743; }
+header h1 { margin:0 0 8px; font-size:clamp(30px,5vw,56px); } header p { max-width:900px; color:#dce7f8; }
+main { width:min(1180px,92vw); margin:32px auto 80px; } section { margin:38px 0; }
+h2 { border-bottom:2px solid #ccd5df; padding-bottom:8px; } h3 { margin-top:28px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:14px; }
+.metric,.claim,.panel { background:var(--card); border:1px solid #dce1e7; border-radius:10px; padding:16px; }
+.metric strong { display:block; font-size:25px; color:var(--blue); } .metric span,.evidence,.muted { color:var(--muted); font-size:13px; }
+.tag { display:inline-block; font-size:11px; text-transform:uppercase; letter-spacing:.08em; font-weight:700; }
+.measurement { border-left:5px solid var(--blue); } .interpretation { border-left:5px solid var(--green); }
+.speculation { border-left:5px solid var(--amber); } .claim p { margin:8px 0; }
+.warning { border-left:5px solid var(--red); background:#fff5f5; padding:14px 18px; }
+.plots { display:grid; grid-template-columns:repeat(auto-fit,minmax(360px,1fr)); gap:18px; }
+.plots figure { margin:0; padding:10px; background:white; border:1px solid #dce1e7; border-radius:10px; }
+.plots img { width:100%; height:auto; } .plots figcaption { color:var(--muted); padding:4px 8px; }
+.data-table { width:100%; border-collapse:collapse; background:white; font-size:13px; overflow-wrap:anywhere; }
+.data-table th,.data-table td { padding:7px 9px; border:1px solid #dce1e7; text-align:left; }
+.data-table th { background:#eaf0f7; } .scroll { overflow-x:auto; }
+code { background:#eef1f5; padding:1px 4px; border-radius:3px;
+overflow-wrap:anywhere; white-space:normal; }
+a { color:var(--blue); }
+footer { color:var(--muted); margin-top:50px; font-size:13px; }
+</style>
+</head>
+<body>
+<header><h1>Scientific Evidence Packet</h1>
+<p>TIC 31065777 · schema 1.1.0 · generated 2026-07-29T02:20:12.821943+00:00.
+This report separates stored measurements from interpretation and speculation.
+It is an auditable analysis product, not a peer-reviewed classification.</p></header>
+<main>
+<section>
+<h2>Executive result</h2>
+<div class="grid">
+<div class="metric"><strong>40.571730224 d</strong><span>weighted raw-event period</span></div>
+<div class="metric"><strong>6.207%</strong><span>median fitted depth</span></div>
+<div class="metric"><strong>5</strong><span>fitted events</span></div>
+<div class="metric"><strong>1.26 s</strong><span>primary–replication period difference</span></div>
+<div class="metric"><strong>4.429%</strong><span>separate light-curve BLS depth</span></div>
+</div>
+<p class="warning"><strong>Conservative conclusion:</strong> recurring eclipse-like
+photometry is measured. An ordinary eclipsing companion is favored. The packet
+does not establish a planet, novelty, artificial origin, or new physics.</p>
+</section>
+<section><h2>Claims and evidence</h2>
+<h3>Measurements</h3><div class="grid"><article class="claim measurement"><div class="tag">measurement</div><p>TIC 31065777 has a fitted period of 40.571730224 days.</p><div class="evidence">Evidence: <a href="data/signal_measurements.json"><code>data/signal_measurements.json#/period_days</code></a> · <a href="data/fitted_events.csv"><code>data/fitted_events.csv</code></a></div></article>
+<article class="claim measurement"><div class="tag">measurement</div><p>The median fitted eclipse depth is 6.207% across 5 fitted events.</p><div class="evidence">Evidence: <a href="data/signal_measurements.json"><code>data/signal_measurements.json#/median_depth_percent</code></a> · <a href="data/fitted_events.csv"><code>data/fitted_events.csv#depth_percent</code></a></div></article>
+<article class="claim measurement"><div class="tag">measurement</div><p>The parametric bootstrap 95% period interval is 40.571601515–40.571866473 days.</p><div class="evidence">Evidence: <a href="data/significance_tests.json"><code>data/significance_tests.json#/bootstrap</code></a> · <a href="data/period_bootstrap.csv"><code>data/period_bootstrap.csv</code></a></div></article>
+<article class="claim measurement"><div class="tag">measurement</div><p>The largest held-out event prediction error is 1.90 minutes.</p><div class="evidence">Evidence: <a href="data/held_out_validation.csv"><code>data/held_out_validation.csv</code></a></div></article>
+<article class="claim measurement"><div class="tag">measurement</div><p>The separate median-pairwise-slope implementation differs from the primary period by 1.26 seconds.</p><div class="evidence">Evidence: <a href="data/replication.json"><code>data/replication.json</code></a></div></article>
+<article class="claim measurement"><div class="tag">measurement</div><p>A separate Astropy BLS implementation, operating on the normalized light curve without the primary event centers, measures a 4.429% phase-coherent dip in the preselected period neighborhood.</p><div class="evidence">Evidence: <a href="data/replication.json"><code>data/replication.json#/lightcurve_bls</code></a> · <a href="data/replication_period_search.csv"><code>data/replication_period_search.csv#depth_percent</code></a></div></article></div>
+<h3>Interpretations</h3><div class="grid"><article class="claim interpretation"><div class="tag">interpretation</div><p>The stored measurements support a recurring eclipse-like signal in the public TESS observations.</p><div class="evidence">Evidence: <a href="data/primary_events.csv"><code>data/primary_events.csv</code></a> · <a href="data/period_search.csv"><code>data/period_search.csv</code></a> · <a href="data/instrument_comparisons.csv"><code>data/instrument_comparisons.csv</code></a></div></article>
+<article class="claim interpretation"><div class="tag">interpretation</div><p>An ordinary eclipsing companion is the leading conventional explanation; the packet does not establish an anomalous object.</p><div class="evidence">Evidence: <a href="data/signal_measurements.json"><code>data/signal_measurements.json</code></a> · <a href="data/conventional_explanations.json"><code>data/conventional_explanations.json</code></a> · <a href="data/unresolved_weaknesses.json"><code>data/unresolved_weaknesses.json</code></a></div></article></div>
+<h3>Speculation</h3><div class="grid"><article class="claim speculation"><div class="tag">speculation</div><p>The companion class could be refined by spectroscopy or additional independent time-series photometry.</p><div class="evidence">Evidence: <a href="data/unresolved_weaknesses.json"><code>data/unresolved_weaknesses.json</code></a></div></article></div>
+<h3>Validated claim-to-evidence graph</h3>
+<p>Every reference below was checked during generation. Measurement and
+interpretation claims must resolve to at least one stored numeric value.</p>
+<div class="scroll"><table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>claim_id</th>
+      <th>claim_class</th>
+      <th>evidence_reference</th>
+      <th>relative_path</th>
+      <th>selector</th>
+      <th>path_is_packet_local</th>
+      <th>artifact_exists</th>
+      <th>selector_valid</th>
+      <th>numeric_value_count</th>
+      <th>validation_detail</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>M-001</td>
+      <td>measurement</td>
+      <td>data/signal_measurements.json#/period_days</td>
+      <td>data/signal_measurements.json</td>
+      <td>/period_days</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M-001</td>
+      <td>measurement</td>
+      <td>data/fitted_events.csv</td>
+      <td>data/fitted_events.csv</td>
+      <td></td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M-002</td>
+      <td>measurement</td>
+      <td>data/signal_measurements.json#/median_depth_percent</td>
+      <td>data/signal_measurements.json</td>
+      <td>/median_depth_percent</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M-002</td>
+      <td>measurement</td>
+      <td>data/fitted_events.csv#depth_percent</td>
+      <td>data/fitted_events.csv</td>
+      <td>depth_percent</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M-003</td>
+      <td>measurement</td>
+      <td>data/significance_tests.json#/bootstrap</td>
+      <td>data/significance_tests.json</td>
+      <td>/bootstrap</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M-003</td>
+      <td>measurement</td>
+      <td>data/period_bootstrap.csv</td>
+      <td>data/period_bootstrap.csv</td>
+      <td></td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>4000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M-004</td>
+      <td>measurement</td>
+      <td>data/held_out_validation.csv</td>
+      <td>data/held_out_validation.csv</td>
+      <td></td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>35</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M-005</td>
+      <td>measurement</td>
+      <td>data/replication.json</td>
+      <td>data/replication.json</td>
+      <td></td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>21</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M-006</td>
+      <td>measurement</td>
+      <td>data/replication.json#/lightcurve_bls</td>
+      <td>data/replication.json</td>
+      <td>/lightcurve_bls</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>14</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M-006</td>
+      <td>measurement</td>
+      <td>data/replication_period_search.csv#depth_percent</td>
+      <td>data/replication_period_search.csv</td>
+      <td>depth_percent</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>2001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I-001</td>
+      <td>interpretation</td>
+      <td>data/primary_events.csv</td>
+      <td>data/primary_events.csv</td>
+      <td></td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>72</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I-001</td>
+      <td>interpretation</td>
+      <td>data/period_search.csv</td>
+      <td>data/period_search.csv</td>
+      <td></td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>13</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I-001</td>
+      <td>interpretation</td>
+      <td>data/instrument_comparisons.csv</td>
+      <td>data/instrument_comparisons.csv</td>
+      <td></td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I-002</td>
+      <td>interpretation</td>
+      <td>data/signal_measurements.json</td>
+      <td>data/signal_measurements.json</td>
+      <td></td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>16</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I-002</td>
+      <td>interpretation</td>
+      <td>data/conventional_explanations.json</td>
+      <td>data/conventional_explanations.json</td>
+      <td></td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I-002</td>
+      <td>interpretation</td>
+      <td>data/unresolved_weaknesses.json</td>
+      <td>data/unresolved_weaknesses.json</td>
+      <td></td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>S-001</td>
+      <td>speculation</td>
+      <td>data/unresolved_weaknesses.json</td>
+      <td>data/unresolved_weaknesses.json</td>
+      <td></td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table></div></section>
+<section><h2>Plots</h2><div class="plots">
+<figure><img src="plots/timeline.png" alt="TESS timeline"><figcaption>Normalized public TESS light curve by sector.</figcaption></figure>
+<figure><img src="plots/phase_fold.png" alt="Phase-folded eclipse"><figcaption>Data folded on the conservative ephemeris.</figcaption></figure>
+<figure><img src="plots/sector_depths.png" alt="Sector depths"><figcaption>Fitted depth by sector.</figcaption></figure>
+<figure><img src="plots/period_bootstrap.png" alt="Period bootstrap"><figcaption>Measurement-error bootstrap; not a discovery FAP.</figcaption></figure>
+<figure><img src="plots/injection_recovery.png" alt="Injection recovery"><figcaption>Known-ephemeris targeted injection sensitivity.</figcaption></figure>
+</div></section>
+<section><h2>Data provenance and quality control</h2>
+<p>Source FITS files are content-hashed in <code>data/provenance.json</code>.
+Every raw cadence found in those files has a retained/removed disposition in
+<code>data/cadence_disposition.csv</code>.</p><div class="scroll"><table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>sector</th>
+      <th>raw_points</th>
+      <th>retained_points</th>
+      <th>removed_points</th>
+      <th>retention_fraction</th>
+      <th>nonzero_quality_points</th>
+      <th>nonfinite_time_points</th>
+      <th>nonfinite_flux_points</th>
+      <th>cache_mismatch_points</th>
+      <th>source_audit_complete</th>
+      <th>note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8</td>
+      <td>968</td>
+      <td>683</td>
+      <td>285</td>
+      <td>0.705579</td>
+      <td>285</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>True</td>
+      <td>{"quality_flag_4096": 269, "quality_flag_4128": 5, "quality_flag_6144": 11, "retained": 683}</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>1154</td>
+      <td>955</td>
+      <td>199</td>
+      <td>0.827556</td>
+      <td>199</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>True</td>
+      <td>{"quality_flag_2048": 25, "quality_flag_4096": 130, "quality_flag_4128": 6, "quality_flag_6144": 38, "retained": 955}</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>3353</td>
+      <td>1962</td>
+      <td>1391</td>
+      <td>0.585148</td>
+      <td>1391</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>True</td>
+      <td>{"quality_flag_128": 29, "quality_flag_132": 289, "quality_flag_164": 1, "quality_flag_32": 5, "quality_flag_4": 62, "quality_flag_4096": 853, "quality_flag_4100": 15, "quality_flag_4128": 2, "quality_flag_4224": 9, "quality_flag_4228": 125, "quality_flag_4260": 1, "retained": 1962}</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>3477</td>
+      <td>2388</td>
+      <td>1089</td>
+      <td>0.686799</td>
+      <td>1089</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>True</td>
+      <td>{"quality_flag_128": 1, "quality_flag_164": 2, "quality_flag_32": 5, "quality_flag_4096": 1079, "quality_flag_4128": 1, "quality_flag_4224": 1, "retained": 2388}</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>10837</td>
+      <td>10007</td>
+      <td>830</td>
+      <td>0.923411</td>
+      <td>830</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>True</td>
+      <td>{"quality_flag_1073741824": 804, "quality_flag_1073741856": 3, "quality_flag_1073741864": 2, "quality_flag_1073741952": 5, "quality_flag_128": 12, "quality_flag_32": 2, "quality_flag_40": 2, "retained": 10007}</td>
+    </tr>
+    <tr>
+      <td>89</td>
+      <td>11424</td>
+      <td>11061</td>
+      <td>363</td>
+      <td>0.968225</td>
+      <td>363</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>True</td>
+      <td>{"quality_flag_1073741824": 350, "quality_flag_1073741828": 1, "quality_flag_1073741856": 9, "quality_flag_32": 3, "retained": 11061}</td>
+    </tr>
+  </tbody>
+</table></div></section>
+<section><h2>Cleaning decisions</h2>
+<p>The decision IDs are joined to every removed cadence in
+<code>data/cadence_disposition.csv</code>.</p>
+<div class="scroll"><table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>decision_id</th>
+      <th>stage</th>
+      <th>decision</th>
+      <th>rationale</th>
+      <th>implementation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CLEAN-001</td>
+      <td>source product selection</td>
+      <td>one priority-ranked light-curve product per sector</td>
+      <td>avoid mixing reductions within a sector</td>
+      <td>omega_v2.lightcurves.select_products</td>
+    </tr>
+    <tr>
+      <td>CLEAN-002</td>
+      <td>cadence filtering</td>
+      <td>remove nonfinite time/flux and nonzero retained quality flags</td>
+      <td>exclude unusable or explicitly flagged measurements</td>
+      <td>omega_v2.lightcurves.lightcurve_to_frame</td>
+    </tr>
+    <tr>
+      <td>CLEAN-003</td>
+      <td>segmentation</td>
+      <td>split gaps larger than max(6 cadences, 0.20 d)</td>
+      <td>prevent normalization across observing gaps</td>
+      <td>omega_v2.lightcurves._split_indices</td>
+    </tr>
+    <tr>
+      <td>CLEAN-004</td>
+      <td>normalization</td>
+      <td>divide each continuous segment by its median</td>
+      <td>preserve short eclipse-like signals without a flexible detrending model</td>
+      <td>omega_v2.lightcurves.lightcurve_to_frame</td>
+    </tr>
+    <tr>
+      <td>CLEAN-005</td>
+      <td>short segment exclusion</td>
+      <td>remove continuous segments with fewer than 30 retained points</td>
+      <td>local noise/event estimates are unstable for shorter segments</td>
+      <td>omega_v2.lightcurves.lightcurve_to_frame</td>
+    </tr>
+    <tr>
+      <td>AUDIT-001</td>
+      <td>cache/source reconciliation</td>
+      <td>flag any finite zero-quality source row that should survive cleaning but is absent from the normalized cache</td>
+      <td>a nonzero count indicates that the cached light curve and audited source FITS product are not exactly reconcilable</td>
+      <td>evidence_packet.generator._audit_sources</td>
+    </tr>
+  </tbody>
+</table></div></section>
+<section><h2>Period searches and alias history</h2>
+<p>Legacy broad-search maxima and partial-support aliases are preserved as
+search history. Only the solution consistent with all five fitted event centers,
+including consecutive cycles, is adopted as the conservative measurement.</p>
+<div class="scroll"><table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>rank</th>
+      <th>method</th>
+      <th>period_days</th>
+      <th>score</th>
+      <th>status</th>
+      <th>origin_artifact</th>
+      <th>selection_basis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>OMEGA event-link search</td>
+      <td>40.571544</td>
+      <td>161.802121</td>
+      <td>selected_primary</td>
+      <td>data/primary_repeat.json</td>
+      <td>Best OMEGA event-link solution after penalizing predicted eclipses in covered flat windows.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>weighted raw-event ephemeris</td>
+      <td>40.571730</td>
+      <td>—</td>
+      <td>selected_conservative_measurement</td>
+      <td>data/signal_measurements.json</td>
+      <td>Weighted fit to all packet-local fitted event centers and explicit integer cycle assignments.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>adjacent fitted-event cycle spacing</td>
+      <td>40.570833</td>
+      <td>—</td>
+      <td>direct_cycle_spacing_check</td>
+      <td>data/fitted_events.csv</td>
+      <td>Sector 8 to 9: 40.570833328 d across 1 assigned cycle(s).</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>adjacent fitted-event cycle spacing</td>
+      <td>40.571725</td>
+      <td>—</td>
+      <td>direct_cycle_spacing_check</td>
+      <td>data/fitted_events.csv</td>
+      <td>Sector 9 to 35: 689.719332137 d across 17 assigned cycle(s).</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>adjacent fitted-event cycle spacing</td>
+      <td>40.571604</td>
+      <td>—</td>
+      <td>direct_cycle_spacing_check</td>
+      <td>data/fitted_events.csv</td>
+      <td>Sector 35 to 36: 40.571604469 d across 1 assigned cycle(s).</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>adjacent fitted-event cycle spacing</td>
+      <td>40.571735</td>
+      <td>—</td>
+      <td>direct_cycle_spacing_check</td>
+      <td>data/fitted_events.csv</td>
+      <td>Sector 36 to 89: 1420.010713816 d across 35 assigned cycle(s).</td>
+    </tr>
+  </tbody>
+</table></div></section>
+<section><h2>Camera, CCD, filter, and sector comparisons</h2>
+<div class="scroll"><table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>sector</th>
+      <th>camera</th>
+      <th>ccd</th>
+      <th>filter_or_bandpass</th>
+      <th>pipeline_author</th>
+      <th>retained_points</th>
+      <th>cadence_minutes</th>
+      <th>event_measured</th>
+      <th>depth_percent</th>
+      <th>depth_error_percent</th>
+      <th>noise_percent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8</td>
+      <td>3</td>
+      <td>1</td>
+      <td>TESS broad optical bandpass</td>
+      <td>MIT/QLP</td>
+      <td>683</td>
+      <td>30.000369</td>
+      <td>True</td>
+      <td>6.199053</td>
+      <td>0.254149</td>
+      <td>0.174188</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>3</td>
+      <td>2</td>
+      <td>TESS broad optical bandpass</td>
+      <td>MIT/QLP</td>
+      <td>955</td>
+      <td>29.999690</td>
+      <td>True</td>
+      <td>5.973249</td>
+      <td>0.132270</td>
+      <td>0.199391</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>3</td>
+      <td>1</td>
+      <td>TESS broad optical bandpass</td>
+      <td>MIT/QLP</td>
+      <td>1962</td>
+      <td>10.000123</td>
+      <td>True</td>
+      <td>6.237652</td>
+      <td>0.117627</td>
+      <td>0.292341</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>3</td>
+      <td>2</td>
+      <td>TESS broad optical bandpass</td>
+      <td>MIT/QLP</td>
+      <td>2388</td>
+      <td>9.999897</td>
+      <td>True</td>
+      <td>6.206924</td>
+      <td>0.184638</td>
+      <td>0.344524</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>3</td>
+      <td>1</td>
+      <td>TESS broad optical bandpass</td>
+      <td>MIT/QLP</td>
+      <td>10007</td>
+      <td>—</td>
+      <td>False</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>89</td>
+      <td>3</td>
+      <td>1</td>
+      <td>TESS broad optical bandpass</td>
+      <td>MIT/QLP</td>
+      <td>11061</td>
+      <td>3.333376</td>
+      <td>True</td>
+      <td>6.662697</td>
+      <td>0.172342</td>
+      <td>0.805665</td>
+    </tr>
+  </tbody>
+</table></div></section>
+<section><h2>Bootstrap and permutation diagnostics</h2>
+<div class="grid">
+<div class="metric"><strong>40.571601515–40.571866473 d</strong><span>parametric bootstrap 95% interval; 2000 trials</span></div>
+<div class="metric"><strong>0.00833</strong><span>post-selection cycle-label coherence diagnostic; not a global false-alarm probability</span></div>
+</div>
+<p class="warning">Cycles and events were selected after looking at the data, so this number must not be interpreted as a global discovery false-alarm rate.</p></section>
+<section><h2>Held-out validation</h2><div class="scroll"><table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>held_out_sector</th>
+      <th>held_out_cycle</th>
+      <th>measured_center_btjd</th>
+      <th>predicted_center_btjd</th>
+      <th>prediction_error_minutes</th>
+      <th>training_events</th>
+      <th>training_period_days</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8</td>
+      <td>0</td>
+      <td>1527.535917</td>
+      <td>1527.534851</td>
+      <td>1.536183</td>
+      <td>4</td>
+      <td>40.571732</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>1</td>
+      <td>1568.106751</td>
+      <td>1568.106686</td>
+      <td>0.093091</td>
+      <td>4</td>
+      <td>40.571730</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>18</td>
+      <td>2257.826083</td>
+      <td>2257.826123</td>
+      <td>-0.057518</td>
+      <td>4</td>
+      <td>40.571730</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>19</td>
+      <td>2298.397687</td>
+      <td>2298.397932</td>
+      <td>-0.351698</td>
+      <td>4</td>
+      <td>40.571728</td>
+    </tr>
+    <tr>
+      <td>89</td>
+      <td>54</td>
+      <td>3718.408401</td>
+      <td>3718.407085</td>
+      <td>1.895732</td>
+      <td>4</td>
+      <td>40.571696</td>
+    </tr>
+  </tbody>
+</table></div></section>
+<section><h2>Independent replication implementation</h2>
+<p>The median-pairwise-slope estimator independently re-fits the stored event
+centers. A separate Astropy Box Least Squares path works directly from the
+normalized light curve in a preselected narrow period neighborhood and receives
+no primary event centers, cycle labels, or depths.</p>
+<div class="grid">
+<div class="metric"><strong>40.571715681 d</strong><span>pairwise-slope event-center replication</span></div>
+<div class="metric"><strong>40.571831653 d</strong><span>light-curve BLS local-period replication</span></div>
+<div class="metric"><strong>92.4</strong><span>BLS depth signal-to-noise ratio</span></div>
+<div class="metric"><strong>yes</strong><span>predeclared BLS replication gate passed</span></div>
+</div>
+<p class="warning">This checks implementation and measurement agreement on the same normalized TESS observations. It is not a blind search and is not independent observational confirmation.</p></section>
+<section><h2>Synthetic signal injection</h2>
+<p>These are targeted, known-ephemeris tests. They do not measure blind-search completeness.</p>
+<div class="scroll"><table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>injected_depth_percent</th>
+      <th>trials</th>
+      <th>recovered</th>
+      <th>recovery_rate</th>
+      <th>median_measured_depth_percent</th>
+      <th>median_snr</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.25</td>
+      <td>4</td>
+      <td>4</td>
+      <td>1.0</td>
+      <td>0.256488</td>
+      <td>12.786527</td>
+    </tr>
+    <tr>
+      <td>0.50</td>
+      <td>4</td>
+      <td>4</td>
+      <td>1.0</td>
+      <td>0.507152</td>
+      <td>25.236309</td>
+    </tr>
+    <tr>
+      <td>1.00</td>
+      <td>4</td>
+      <td>4</td>
+      <td>1.0</td>
+      <td>1.007237</td>
+      <td>50.159943</td>
+    </tr>
+    <tr>
+      <td>2.00</td>
+      <td>4</td>
+      <td>4</td>
+      <td>1.0</td>
+      <td>2.009649</td>
+      <td>100.003206</td>
+    </tr>
+    <tr>
+      <td>5.00</td>
+      <td>4</td>
+      <td>4</td>
+      <td>1.0</td>
+      <td>5.001150</td>
+      <td>249.136639</td>
+    </tr>
+  </tbody>
+</table></div>
+<details><summary>Trial detail</summary><div class="scroll"><table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>trial</th>
+      <th>injected_depth_fraction</th>
+      <th>injected_depth_percent</th>
+      <th>injected_period_days</th>
+      <th>injected_duration_hours</th>
+      <th>injected_epoch_btjd</th>
+      <th>injected_points</th>
+      <th>reference_points</th>
+      <th>measured_depth_percent</th>
+      <th>matched_filter_snr</th>
+      <th>recovered</th>
+      <th>test_scope</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0.0025</td>
+      <td>0.25</td>
+      <td>7.123</td>
+      <td>3.0</td>
+      <td>1518.942560</td>
+      <td>422</td>
+      <td>24262</td>
+      <td>0.211636</td>
+      <td>10.594601</td>
+      <td>True</td>
+      <td>targeted_known-ephemeris_recovery</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0.0025</td>
+      <td>0.25</td>
+      <td>7.123</td>
+      <td>3.0</td>
+      <td>1519.355476</td>
+      <td>423</td>
+      <td>24351</td>
+      <td>0.266393</td>
+      <td>13.358046</td>
+      <td>True</td>
+      <td>targeted_known-ephemeris_recovery</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>0.0025</td>
+      <td>0.25</td>
+      <td>7.123</td>
+      <td>3.0</td>
+      <td>1519.640031</td>
+      <td>420</td>
+      <td>24414</td>
+      <td>0.265628</td>
+      <td>13.186705</td>
+      <td>True</td>
+      <td>targeted_known-ephemeris_recovery</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>0.0025</td>
+      <td>0.25</td>
+      <td>7.123</td>
+      <td>3.0</td>
+      <td>1520.060228</td>
+      <td>429</td>
+      <td>24279</td>
+      <td>0.247349</td>
+      <td>12.386350</td>
+      <td>True</td>
+      <td>targeted_known-ephemeris_recovery</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0.0050</td>
+      <td>0.50</td>
+      <td>7.123</td>
+      <td>3.0</td>
+      <td>1518.946870</td>
+      <td>421</td>
+      <td>24259</td>
+      <td>0.464177</td>
+      <td>23.213869</td>
+      <td>True</td>
+      <td>targeted_known-ephemeris_recovery</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0.0050</td>
+      <td>0.50</td>
+      <td>7.123</td>
+      <td>3.0</td>
+      <td>1519.317786</td>
+      <td>422</td>
+      <td>24350</td>
+      <td>0.525294</td>
+      <td>26.360170</td>
+      <td>True</td>
+      <td>targeted_known-ephemeris_recovery</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>0.0050</td>
+      <td>0.50</td>
+      <td>7.123</td>
+      <td>3.0</td>
+      <td>1519.737451</td>
+      <td>420</td>
+      <td>24411</td>
+      <td>0.517472</td>
+      <td>25.673270</td>
+      <td>True</td>
+      <td>targeted_known-ephemeris_recovery</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>0.0050</td>
+      <td>0.50</td>
+      <td>7.123</td>
+      <td>3.0</td>
+      <td>1520.042290</td>
+      <td>426</td>
+      <td>24292</td>
+      <td>0.496833</td>
+      <td>24.799349</td>
+      <td>True</td>
+      <td>targeted_known-ephemeris_recovery</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0.0100</td>
+      <td>1.00</td>
+      <td>7.123</td>
+      <td>3.0</td>
+      <td>1518.967426</td>
+      <td>421</td>
+      <td>24267</td>
+      <td>0.980002</td>
+      <td>49.047826</td>
+      <td>True</td>
+      <td>targeted_known-ephemeris_recovery</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0.0100</td>
+      <td>1.00</td>
+      <td>7.123</td>
+      <td>3.0</td>
+      <td>1519.364278</td>
+      <td>423</td>
+      <td>24350</td>
+      <td>1.019435</td>
+      <td>51.141237</td>
+      <td>True</td>
+      <td>targeted_known-ephemeris_recovery</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>0.0100</td>
+      <td>1.00</td>
+      <td>7.123</td>
+      <td>3.0</td>
+      <td>1519.672106</td>
+      <td>416</td>
+      <td>24415</td>
+      <td>1.019997</td>
+      <td>50.324824</td>
+      <td>True</td>
+      <td>targeted_known-ephemeris_recovery</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>0.0100</td>
+      <td>1.00</td>
+      <td>7.123</td>
+      <td>3.0</td>
+      <td>1520.089642</td>
+      <td>433</td>
+      <td>24270</td>
+      <td>0.995039</td>
+      <td>49.995062</td>
+      <td>True</td>
+      <td>targeted_known-ephemeris_recovery</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0.0200</td>
+      <td>2.00</td>
+      <td>7.123</td>
+      <td>3.0</td>
+      <td>1518.943209</td>
+      <td>422</td>
+      <td>24259</td>
+      <td>1.962309</td>
+      <td>98.230671</td>
+      <td>True</td>
+      <td>targeted_known-ephemeris_recovery</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0.0200</td>
+      <td>2.00</td>
+      <td>7.123</td>
+      <td>3.0</td>
+      <td>1519.273676</td>
+      <td>417</td>
+      <td>24352</td>
+      <td>2.045071</td>
+      <td>101.895070</td>
+      <td>True</td>
+      <td>targeted_known-ephemeris_recovery</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>0.0200</td>
+      <td>2.00</td>
+      <td>7.123</td>
+      <td>3.0</td>
+      <td>1519.693235</td>
+      <td>418</td>
+      <td>24414</td>
+      <td>2.023435</td>
+      <td>100.103191</td>
+      <td>True</td>
+      <td>targeted_known-ephemeris_recovery</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>0.0200</td>
+      <td>2.00</td>
+      <td>7.123</td>
+      <td>3.0</td>
+      <td>1520.068814</td>
+      <td>429</td>
+      <td>24271</td>
+      <td>1.995862</td>
+      <td>99.903220</td>
+      <td>True</td>
+      <td>targeted_known-ephemeris_recovery</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0.0500</td>
+      <td>5.00</td>
+      <td>7.123</td>
+      <td>3.0</td>
+      <td>1518.961290</td>
+      <td>420</td>
+      <td>24270</td>
+      <td>4.981149</td>
+      <td>249.053268</td>
+      <td>True</td>
+      <td>targeted_known-ephemeris_recovery</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0.0500</td>
+      <td>5.00</td>
+      <td>7.123</td>
+      <td>3.0</td>
+      <td>1519.301498</td>
+      <td>419</td>
+      <td>24349</td>
+      <td>5.045723</td>
+      <td>252.016238</td>
+      <td>True</td>
+      <td>targeted_known-ephemeris_recovery</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>0.0500</td>
+      <td>5.00</td>
+      <td>7.123</td>
+      <td>3.0</td>
+      <td>1519.659034</td>
+      <td>418</td>
+      <td>24412</td>
+      <td>5.009705</td>
+      <td>247.799568</td>
+      <td>True</td>
+      <td>targeted_known-ephemeris_recovery</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>0.0500</td>
+      <td>5.00</td>
+      <td>7.123</td>
+      <td>3.0</td>
+      <td>1520.040235</td>
+      <td>426</td>
+      <td>24289</td>
+      <td>4.992594</td>
+      <td>249.220010</td>
+      <td>True</td>
+      <td>targeted_known-ephemeris_recovery</td>
+    </tr>
+  </tbody>
+</table></div></details></section>
+<section><h2>Conventional explanations considered</h2>
+<div class="scroll"><table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>explanation</th>
+      <th>assessment</th>
+      <th>reason</th>
+      <th>evidence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ordinary eclipsing stellar or substellar companion</td>
+      <td>favored</td>
+      <td>The repeatable, approximately 6.21% eclipse-like depth is consistent with an occulting companion; photometry alone does not establish its mass.</td>
+      <td>[data/signal_measurements.json#/median_depth_percent]</td>
+    </tr>
+    <tr>
+      <td>background or neighboring eclipsing binary</td>
+      <td>reduced but not eliminated</td>
+      <td>Raw-pixel aperture and blank-position controls were available.</td>
+      <td>[data/TIC_31065777_blank_apertures.csv]</td>
+    </tr>
+    <tr>
+      <td>quality-flagged spacecraft or reduction artifact</td>
+      <td>reduced</td>
+      <td>The cadence ledger records quality flags and the measured events are drawn from retained cadences across multiple sectors.</td>
+      <td>[data/cadence_disposition.csv, data/quality_control.csv]</td>
+    </tr>
+    <tr>
+      <td>period alias or harmonic</td>
+      <td>reduced but search-history dependent</td>
+      <td>Consecutive-cycle events and coverage tests support the reported period, while the period-search table preserves competing aliases.</td>
+      <td>[data/period_search.csv, data/held_out_validation.csv]</td>
+    </tr>
+    <tr>
+      <td>stellar rotation or pulsation</td>
+      <td>disfavored, not physically ruled out</td>
+      <td>The measured signal is localized in phase and repeats as discrete dips rather than being classified from a sinusoidal model.</td>
+      <td>[data/primary_events.csv, plots/phase_fold.png]</td>
+    </tr>
+    <tr>
+      <td>planetary transit</td>
+      <td>not established</td>
+      <td>Transit-like morphology alone does not identify a planet; dilution, stellar radius uncertainty, and companion mass remain unresolved.</td>
+      <td>[data/signal_measurements.json, data/unresolved_weaknesses.json]</td>
+    </tr>
+  </tbody>
+</table></div></section>
+<section><h2>Unresolved weaknesses</h2><div class="scroll"><table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>severity</th>
+      <th>weakness</th>
+      <th>consequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>high</td>
+      <td>No radial-velocity or spectroscopic mass measurement is present.</td>
+      <td>Photometry cannot determine whether the companion is planetary, substellar, or stellar.</td>
+    </tr>
+    <tr>
+      <td>high</td>
+      <td>The permutation test is post-selection.</td>
+      <td>Its p-value is a coherence diagnostic, not a global false-alarm probability.</td>
+    </tr>
+    <tr>
+      <td>medium</td>
+      <td>Only 5 fitted eclipse events constrain the conservative ephemeris.</td>
+      <td>Rare systematics or one influential event can be underrepresented despite leave-one-out checks.</td>
+    </tr>
+    <tr>
+      <td>medium</td>
+      <td>Primary and replication fits reuse the same astronomical observations.</td>
+      <td>Code-path agreement is not independent observational confirmation.</td>
+    </tr>
+    <tr>
+      <td>medium</td>
+      <td>Only one TESS camera is represented.</td>
+      <td>A true cross-camera consistency test is not available.</td>
+    </tr>
+    <tr>
+      <td>medium</td>
+      <td>Targeted injections use a known injected ephemeris.</td>
+      <td>They measure local sensitivity, not blind-search completeness.</td>
+    </tr>
+    <tr>
+      <td>low</td>
+      <td>No catalog snapshot was available for this packet.</td>
+      <td>Catalog absence must never be used as proof of novelty.</td>
+    </tr>
+  </tbody>
+</table></div></section>
+<section><h2>Packet inventory</h2><div class="scroll"><table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>relative_path</th>
+      <th>bytes</th>
+      <th>sha256</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>data/TIC_31065777_aperture_robustness.csv</td>
+      <td>738</td>
+      <td>148401afdbf11f3b2c412401488ce33e172dbde3f65dbac56a381016beb92cbc</td>
+    </tr>
+    <tr>
+      <td>data/TIC_31065777_blank_apertures.csv</td>
+      <td>836</td>
+      <td>bbfb0b0ba36c1f49b15f96879db148a6e8784e482999ad68456fc939c40329e8</td>
+    </tr>
+    <tr>
+      <td>data/TIC_31065777_temporal_controls.csv</td>
+      <td>582</td>
+      <td>74bff6337f7e48c2e0ce26b3ab5fcbbe5fa4d0e8961002e12b9bd1f80167815d</td>
+    </tr>
+    <tr>
+      <td>data/cadence_disposition.csv</td>
+      <td>9013145</td>
+      <td>84b0a10235a5da56175a920be16673e0510b9ceec9bc32b31a012ce09c706ff1</td>
+    </tr>
+    <tr>
+      <td>data/claim_evidence.csv</td>
+      <td>1944</td>
+      <td>9daf39b50aaa5e089d21a6eeb5d0c3be7d0239954d86449bf757f573733c4553</td>
+    </tr>
+    <tr>
+      <td>data/claims.json</td>
+      <td>2610</td>
+      <td>92012fdd4151307eaea6d1a9f83700b7f461c26adfbe750d153f431af25424e9</td>
+    </tr>
+    <tr>
+      <td>data/cleaning_decisions.csv</td>
+      <td>1234</td>
+      <td>9fea44cf6babc12a46af10b7b8ced5e4b37d574e427873b6bb306c9d1a3240b1</td>
+    </tr>
+    <tr>
+      <td>data/conventional_explanations.json</td>
+      <td>2018</td>
+      <td>c77b35dee867c20b4e2a43998950dc9b42d671b1213164ab24520dca023665cd</td>
+    </tr>
+    <tr>
+      <td>data/fitted_events.csv</td>
+      <td>1543</td>
+      <td>1b92e0abfdd6ce2dfd4ae4485fe0bcf69a9f8c6a4c5e8f33129fe65adeb36b5e</td>
+    </tr>
+    <tr>
+      <td>data/held_out_validation.csv</td>
+      <td>549</td>
+      <td>1d729217345b049f0bb5019c749e1fc1594badf1cc5477fe6f7c3f05939ffc80</td>
+    </tr>
+    <tr>
+      <td>data/injection_summary.csv</td>
+      <td>343</td>
+      <td>b295080ad1148169744736fd6f8e0b2905903f4c15f1ed93575adfeed817205e</td>
+    </tr>
+    <tr>
+      <td>data/injection_tests.csv</td>
+      <td>2753</td>
+      <td>ad4bdf679eec2f2e3436bdf5f2601abf4d96a85c3b874d997bda1ca98cb8e593</td>
+    </tr>
+    <tr>
+      <td>data/instrument_comparisons.csv</td>
+      <td>840</td>
+      <td>7322bae89d54bffb71a543d3f80d54e2c444be549db059e49e2cc7d23457e282</td>
+    </tr>
+    <tr>
+      <td>data/normalized_lightcurve.parquet</td>
+      <td>1071732</td>
+      <td>fb5392724aece4cccb577fa082c59ba4d96beb545f5ad9eda90524b430478045</td>
+    </tr>
+    <tr>
+      <td>data/period_bootstrap.csv</td>
+      <td>45303</td>
+      <td>3e6b69159a434e82fd60617897d1ea1afcb645521c71c2526ff9e3b698af17c9</td>
+    </tr>
+    <tr>
+      <td>data/period_search.csv</td>
+      <td>1145</td>
+      <td>ce2e2beebd52b54d3121a66f2ef6c83ffc81328ef2bc7ac96d668f863c609bbf</td>
+    </tr>
+    <tr>
+      <td>data/primary_events.csv</td>
+      <td>1020</td>
+      <td>a8f81d6fe0271030c48614ea1df871c192c53e3bd38e52b5a0afef074cca4da5</td>
+    </tr>
+    <tr>
+      <td>data/primary_repeat.json</td>
+      <td>4251</td>
+      <td>389748053ca305073df719c52b385d217f7033dc1dd46c65fcf66fcf73a5215a</td>
+    </tr>
+    <tr>
+      <td>data/primary_summary.json</td>
+      <td>1111</td>
+      <td>009119e8b098f319e2142f991f89eb6584b96b1aaecfb239173038856046253a</td>
+    </tr>
+    <tr>
+      <td>data/provenance.json</td>
+      <td>4069</td>
+      <td>9d0d795792e0b17a6b7381628b83550a68fa86d59ae941336da3eb18cd999cf9</td>
+    </tr>
+    <tr>
+      <td>data/quality_control.csv</td>
+      <td>1588</td>
+      <td>0918eaa9e1e61ecd1d7731601fd9ebe8afa225a2ee04157ef35092a0a4805825</td>
+    </tr>
+    <tr>
+      <td>data/removed_points.csv</td>
+      <td>1243247</td>
+      <td>2bf56317e69d55a2960fee5b48edca407f78b965ec563a9ca971544aaa450e9d</td>
+    </tr>
+    <tr>
+      <td>data/replication.json</td>
+      <td>1503</td>
+      <td>02d32da98518e275441c05abcf18361a060754e95c231b62a5a4dc81ad2c1385</td>
+    </tr>
+    <tr>
+      <td>data/replication_period_search.csv</td>
+      <td>289946</td>
+      <td>ea779475cb262c6945eb849af5569414bb13fac5f11fd7cfafee8f898c78e8c3</td>
+    </tr>
+    <tr>
+      <td>data/reproducibility.json</td>
+      <td>1457</td>
+      <td>1bc5a42df8e8beb4726911a7669c960d0872e23e29a2d33b1b8ee7d05cf3236a</td>
+    </tr>
+    <tr>
+      <td>data/signal_measurements.json</td>
+      <td>684</td>
+      <td>43670e2c56907d504d20c07ec57d200b29a80122fe34f97e11845d4b87ed02ed</td>
+    </tr>
+    <tr>
+      <td>data/significance_tests.json</td>
+      <td>1035</td>
+      <td>8ceee3561f6c609dc90e47cafa01df2a9b22d343eb649bf104b5620a562b6237</td>
+    </tr>
+    <tr>
+      <td>data/unresolved_weaknesses.json</td>
+      <td>1406</td>
+      <td>41069d2245f5ef8d1e994fe076d2f5c496316fadae0a37f683a8fcff52e141f2</td>
+    </tr>
+    <tr>
+      <td>evidence.sqlite</td>
+      <td>8892416</td>
+      <td>a9da261d7bf8b17542c6a3e0bd40d5c8153d8f5bdcf1448a1b071895a24c9c3b</td>
+    </tr>
+    <tr>
+      <td>plots/injection_recovery.png</td>
+      <td>27731</td>
+      <td>e3781c402dd30b67fbf2384673e9bc931f89cda0d1e6379c73dac135fabd13fc</td>
+    </tr>
+    <tr>
+      <td>plots/period_bootstrap.png</td>
+      <td>36613</td>
+      <td>f08b4b309a5369843ed6d56a43c993b3e671704402a9f3042ae87856b9b2da23</td>
+    </tr>
+    <tr>
+      <td>plots/phase_fold.png</td>
+      <td>97632</td>
+      <td>64f879691c3f93dee339bdc42fb48e52ce71d3a32d78ea2b861d2da1ed540e8d</td>
+    </tr>
+    <tr>
+      <td>plots/sector_depths.png</td>
+      <td>31904</td>
+      <td>b226247f13c0b7ab5d058d50a71da2c5273be4399ead2647fe81f84b01a7e829</td>
+    </tr>
+    <tr>
+      <td>plots/timeline.png</td>
+      <td>63960</td>
+      <td>3e57bd6e92dab62c1fda6091ecc256fec2ed9888b23e312d0173a422f7a90c1a</td>
+    </tr>
+  </tbody>
+</table></div></section>
+<footer>Primary classification: repeat_candidate.
+All numerical claims should be checked against the referenced packet-local artifact
+or <code>evidence.sqlite</code>.</footer>
+</main></body></html>

@@ -1,0 +1,42 @@
+{
+  "bootstrap_trials": 2000,
+  "code_files": {
+    "analyze_target.py": {
+      "sha256": "1efd372babc59eee501181d3405cb0102c044bcc0c8402c9be2b178e2daabae6"
+    },
+    "src/evidence_packet/analysis.py": {
+      "sha256": "5c8607290cc0320104df82016b186024ee41dbdc7e8d912af9d5add677f0846e"
+    },
+    "src/evidence_packet/generator.py": {
+      "sha256": "55578ba0fb04d1d38c39bac2104fe70bd4f3338e44594619570521b2f0212ac9"
+    },
+    "src/omega_v2/detection.py": {
+      "sha256": "15fc0eedfe728a5e7dceb48c54fe6d5a9d44e724d8116d876e33bc24b58271cd"
+    },
+    "src/omega_v2/lightcurves.py": {
+      "sha256": "e6372f73902ac183e2cc696d17d7a067284b6e78cd99c99602ca62c99a797c33"
+    }
+  },
+  "command": "python analyze_target.py --tic 31065777 --max-sectors 8 --bootstrap-trials 2000 --seed 20260719 --offline",
+  "environment": {
+    "cloud_hosting_required": false,
+    "external_database_required": false,
+    "paid_api_used": false
+  },
+  "generated_utc": "2026-07-29T02:20:11.220215+00:00",
+  "package_versions": {
+    "astropy": "8.0.1",
+    "lightkurve": "2.6.0",
+    "matplotlib": "3.11.0",
+    "numpy": "2.5.1",
+    "pandas": "2.3.3",
+    "pyarrow": "25.0.0",
+    "scipy": "1.18.0"
+  },
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "project_root": ".",
+  "python": "3.12.13 (main, Mar  3 2026, 12:39:30) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "random_seed": 20260719,
+  "schema_version": "1.1.0",
+  "working_directory": "project repository root"
+}

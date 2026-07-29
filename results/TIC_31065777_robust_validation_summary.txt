@@ -1,0 +1,17 @@
+TIC 31065777 conservative robustness validation
+==============================================================
+Epoch BTJD: 1527.5349623555
+Period days: 40.5717302238
+Bootstrap 95% low days: 40.5715951831
+Bootstrap 95% high days: 40.5718613261
+Median fitted depth percent: 6.206924
+Period range across apertures seconds: 1.611639
+Maximum leave-one-out error minutes: 1.895732
+Largest blank-control median percent: 0.446936
+Largest temporal-control depth percent: 0.181505
+Aperture stable: True
+Leave-one-out stable: True
+Bootstrap narrow: True
+Spatial controls clear: True
+Temporal controls clear: True
+Robust validation passes: True
