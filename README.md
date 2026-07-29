@@ -6,6 +6,8 @@ full-frame images.
 
 Public repository: <https://github.com/henrybarrientos27/tic-31065777-eclipse>
 
+Research overview: <https://henrybarrientos27.github.io/tic-31065777-eclipse/>
+
 ## Result in one paragraph
 
 Five events in TESS Sectors 8, 9, 35, 36, and 89 follow a linear ephemeris of
