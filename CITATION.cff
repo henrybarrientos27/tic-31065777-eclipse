@@ -6,8 +6,9 @@ authors:
   - family-names: Barrientos
     given-names: Henry
     email: henrywaynebarrientos@gmail.com
-version: 0.1.0
+version: 0.1.1
 date-released: 2026-07-28
+doi: "10.5281/zenodo.21662098"
 repository-code: "https://github.com/henrybarrientos27/tic-31065777-eclipse"
 abstract: >-
   Reproducible raw-pixel photometry, robustness tests, localization checks,

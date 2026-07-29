@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-07-29T02:40:50.336183+00:00",
+  "generated_utc": "2026-07-29T03:28:50.052516+00:00",
   "python": "3.12.13 (main, Mar  3 2026, 12:39:30) [Clang 21.0.0 (clang-2100.0.123.102)]",
   "files": [
     {
@@ -9,8 +9,8 @@
     },
     {
       "path": "CITATION.cff",
-      "bytes": 744,
-      "sha256": "24716239e6bbaf70ced8af563bd2e2b8a414ae04dce70ab3b34b916aca9703eb"
+      "bytes": 775,
+      "sha256": "bebefcef84f2ee795e4ef65b795553b9b55481946e1639cb2c52bd365ee3ce83"
     },
     {
       "path": "LICENSE",
@@ -29,8 +29,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4538,
-      "sha256": "2fa04003e544c9e8b053751b1b3e83a030d77616f2d403f3cd1711d8860a3cfd"
+      "bytes": 4621,
+      "sha256": "47aaa01c4d78ea02a983b628378b7af80fc9ed5239d899154f29984a2f739238"
     },
     {
       "path": "analyze_target.py",
@@ -105,7 +105,7 @@
     {
       "path": "manuscript/TIC_31065777_RNAAS_FIGURE.pdf",
       "bytes": 66729,
-      "sha256": "797c1ea4739b9f7825543089b459432b246380d519541c5e3c3d6fd4cec9d6e0"
+      "sha256": "2c83f17e4ccf9f4c0c50820d7bfbee6eb8a0c17e871738d3b65ccbb015458a2e"
     },
     {
       "path": "manuscript/aasjournalv7.1.bst",
@@ -119,18 +119,18 @@
     },
     {
       "path": "manuscript/references.bib",
-      "bytes": 2539,
-      "sha256": "5272fb37d63b487052c38c9a6f38b97d4a05e8d67c93bb71805737853af36ddb"
+      "bytes": 2838,
+      "sha256": "3e781267e6c552f12a5d5b44573bd4703a489d06b3c0d9e89709fa737f6e941f"
     },
     {
       "path": "manuscript/tic_31065777_rnaas.pdf",
-      "bytes": 127290,
-      "sha256": "4c9cd39d90a6fd1f570e2c221dc35620b13b24bb81b5af3d3f38839767554cea"
+      "bytes": 127785,
+      "sha256": "9adbe7a577c65583d283feb172d8dbf7543642f49f73be349b652b10f90b97da"
     },
     {
       "path": "manuscript/tic_31065777_rnaas.tex",
-      "bytes": 5992,
-      "sha256": "938b31744e34e3d63435c1674b8c5c0c471230db0c75c29429a7614f05de9536"
+      "bytes": 6018,
+      "sha256": "f44be6d10cb377a18067eb0946a755ea87bb818feb1bd51af09e5e3c3442c89a"
     },
     {
       "path": "requirements.txt",
@@ -245,7 +245,7 @@
     {
       "path": "results/evidence_packets/TIC_31065777/artifact_manifest.csv",
       "bytes": 3431,
-      "sha256": "56721bd1dc0416992551bbfaa6b4422fddf609007dec9344f352e461faaec27c"
+      "sha256": "9a96c39620a7d76633b5e84c763e58676841433bf26ca6489a3a7fda48fc6a4c"
     },
     {
       "path": "results/evidence_packets/TIC_31065777/data/TIC_31065777_aperture_robustness.csv",
@@ -370,7 +370,7 @@
     {
       "path": "results/evidence_packets/TIC_31065777/data/reproducibility.json",
       "bytes": 1457,
-      "sha256": "1bc5a42df8e8beb4726911a7669c960d0872e23e29a2d33b1b8ee7d05cf3236a"
+      "sha256": "74d7ca7f1df6d03cb72e88c3d2cd6a8f9733013daa6d5e3f618ac3cab6c401c6"
     },
     {
       "path": "results/evidence_packets/TIC_31065777/data/signal_measurements.json",
@@ -390,12 +390,12 @@
     {
       "path": "results/evidence_packets/TIC_31065777/evidence.sqlite",
       "bytes": 8892416,
-      "sha256": "a9da261d7bf8b17542c6a3e0bd40d5c8153d8f5bdcf1448a1b071895a24c9c3b"
+      "sha256": "5f0d4208e335f7aff63fd73baceade975ab2bc1a5e228fea23f5863060ab159a"
     },
     {
       "path": "results/evidence_packets/TIC_31065777/index.html",
       "bytes": 43632,
-      "sha256": "fbd58912210068b26795ba7220ab4ad3ea0bcc654468a84cf076c332dc62dc96"
+      "sha256": "859c8ce1c3926c94defa434aaa73d941e969011644b227f0945a3edbfb1e6018"
     },
     {
       "path": "results/evidence_packets/TIC_31065777/plots/injection_recovery.png",
@@ -450,7 +450,7 @@
     {
       "path": "results/publication/TIC_31065777_RNAAS_FIGURE.pdf",
       "bytes": 66729,
-      "sha256": "797c1ea4739b9f7825543089b459432b246380d519541c5e3c3d6fd4cec9d6e0"
+      "sha256": "2c83f17e4ccf9f4c0c50820d7bfbee6eb8a0c17e871738d3b65ccbb015458a2e"
     },
     {
       "path": "results/publication/TIC_31065777_RNAAS_FIGURE.png",

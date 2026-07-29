@@ -103,8 +103,10 @@ products retain their original terms and attribution requirements.
 
 ## Citation
 
-Please cite the archived release described in `CITATION.cff`. After journal
-publication, cite the Research Note as the primary scientific reference.
+Please cite the archived release using DOI
+[`10.5281/zenodo.21662098`](https://doi.org/10.5281/zenodo.21662098), as
+described in `CITATION.cff`. After journal publication, cite the Research Note
+as the primary scientific reference.
 
 ## Contact
 

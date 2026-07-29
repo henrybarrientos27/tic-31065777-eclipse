@@ -8,7 +8,7 @@
       "sha256": "5c8607290cc0320104df82016b186024ee41dbdc7e8d912af9d5add677f0846e"
     },
     "src/evidence_packet/generator.py": {
-      "sha256": "55578ba0fb04d1d38c39bac2104fe70bd4f3338e44594619570521b2f0212ac9"
+      "sha256": "990feac2e7fdcaf6feca9d109006286731eacbcf496745b2cf841236ea798746"
     },
     "src/omega_v2/detection.py": {
       "sha256": "15fc0eedfe728a5e7dceb48c54fe6d5a9d44e724d8116d876e33bc24b58271cd"
@@ -23,7 +23,7 @@
     "external_database_required": false,
     "paid_api_used": false
   },
-  "generated_utc": "2026-07-29T02:20:11.220215+00:00",
+  "generated_utc": "2026-07-29T03:28:31.174110+00:00",
   "package_versions": {
     "astropy": "8.0.1",
     "lightkurve": "2.6.0",
