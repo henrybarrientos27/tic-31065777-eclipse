@@ -415,7 +415,39 @@ def _audit_sources(
             }
         )
 
-    return products, pd.DataFrame(disposition_rows), pd.DataFrame(qc_rows)
+    disposition_columns = [
+        "sector",
+        "source_row",
+        "cadence_number",
+        "time_btjd",
+        "source_flux",
+        "source_flux_column",
+        "quality_flag",
+        "quality_flag_binary",
+        "continuous_segment_id",
+        "disposition",
+        "reason",
+        "decision_rule_id",
+        "source_file",
+    ]
+    qc_columns = [
+        "sector",
+        "raw_points",
+        "retained_points",
+        "removed_points",
+        "retention_fraction",
+        "nonzero_quality_points",
+        "nonfinite_time_points",
+        "nonfinite_flux_points",
+        "cache_mismatch_points",
+        "source_audit_complete",
+        "note",
+    ]
+    return (
+        products,
+        pd.DataFrame(disposition_rows, columns=disposition_columns),
+        pd.DataFrame(qc_rows, columns=qc_columns),
+    )
 
 
 def _measurement_events(
@@ -629,7 +661,20 @@ def _instrument_comparisons(
                 ),
             }
         )
-    return pd.DataFrame(rows)
+    columns = [
+        "sector",
+        "camera",
+        "ccd",
+        "filter_or_bandpass",
+        "pipeline_author",
+        "retained_points",
+        "cadence_minutes",
+        "event_measured",
+        "depth_percent",
+        "depth_error_percent",
+        "noise_percent",
+    ]
+    return pd.DataFrame(rows, columns=columns)
 
 
 def _copy_optional_controls(project_root: Path, tic_id: int, data_dir: Path) -> dict:
@@ -1307,7 +1352,12 @@ def _write_sqlite(
                 name, connection, if_exists="replace", index=False
             )
         for name, records in json_records.items():
-            sqlite_safe(pd.DataFrame(records)).to_sql(
+            record_frame = pd.DataFrame(records)
+            if record_frame.shape[1] == 0:
+                record_frame = pd.DataFrame(
+                    {"record_json": pd.Series(dtype="string")}
+                )
+            sqlite_safe(record_frame).to_sql(
                 name, connection, if_exists="replace", index=False
             )
 

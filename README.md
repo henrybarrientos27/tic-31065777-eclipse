@@ -108,6 +108,17 @@ Please cite the archived release using DOI
 described in `CITATION.cff`. After journal publication, cite the Research Note
 as the primary scientific reference.
 
+See [PUBLICATION_STATUS.md](PUBLICATION_STATUS.md) for the exact distinction
+between the citable Zenodo release, the included manuscript, and journal
+publication status.
+
+## Authorship and assistance
+
+[AI_USAGE.md](AI_USAGE.md) records substantial AI-assisted development. Henry
+Barrientos is responsible for understanding, reviewing, running, and accurately
+representing the analysis; the repository does not imply that every method,
+dependency, or line of code was invented independently.
+
 ## Contact
 
 Henry Barrientos - `henrywaynebarrientos@gmail.com`
