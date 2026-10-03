@@ -20,3 +20,17 @@ keywords:
   - TESS
   - reproducible research
 license: MIT
+preferred-citation:
+  type: article
+  title: "Five TESS Eclipses of TIC 31065777 at a 40.5717 day Period"
+  authors:
+    - family-names: Barrientos
+      given-names: Henry
+      orcid: "https://orcid.org/0009-0006-4832-2983"
+  journal: "Research Notes of the AAS"
+  year: 2026
+  month: 8
+  volume: "10"
+  issue: "8"
+  start: "242"
+  doi: "10.3847/2515-5172/ae9b07"

@@ -1,8 +1,11 @@
 # TIC 31065777 eclipse candidate
 
-This repository is the reproducible research package for a short Research Note
-on five eclipse-like events associated with TIC 31065777 in public TESS
-full-frame images.
+Reproducible analysis accompanying Henry Barrientos's published Research Note,
+[*Five TESS Eclipses of TIC 31065777 at a 40.5717 day Period*](https://doi.org/10.3847/2515-5172/ae9b07),
+Research Notes of the AAS **10**, 242 (August 20, 2026).
+
+The study reports five eclipse-like events associated with TIC 31065777 in
+public TESS full-frame images. The companion class remains unresolved.
 
 Public repository: <https://github.com/henrybarrientos27/tic-31065777-eclipse>
 
@@ -103,10 +106,10 @@ products retain their original terms and attribution requirements.
 
 ## Citation
 
-Please cite the archived release using DOI
-[`10.5281/zenodo.21662098`](https://doi.org/10.5281/zenodo.21662098), as
-described in `CITATION.cff`. After journal publication, cite the Research Note
-as the primary scientific reference.
+Cite the [published Research Note](https://doi.org/10.3847/2515-5172/ae9b07) for the scientific result
+and the existing [v0.1.2 software/data archive](https://doi.org/10.5281/zenodo.21662098)
+for the reproducible package. Both records are represented in [CITATION.cff](CITATION.cff).
+RNAAS is [moderated and non-peer-reviewed](https://journals.aas.org/research-notes/).
 
 See [PUBLICATION_STATUS.md](PUBLICATION_STATUS.md) for the exact distinction
 between the citable Zenodo release, the included manuscript, and journal
